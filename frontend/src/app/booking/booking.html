@@ -1,0 +1,11 @@
+<h2>Book a Service: {{ serviceName }}</h2>
+
+<label>Date:</label>
+<input type="date" [(ngModel)]="date">
+
+<label>Time:</label>
+<input type="time" [(ngModel)]="time">
+
+<button (click)="submitBooking()">Confirm Booking</button>
+
+<p>{{ message }}</p>

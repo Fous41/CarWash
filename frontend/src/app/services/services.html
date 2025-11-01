@@ -1,0 +1,8 @@
+<h2>Car Wash Services</h2>
+
+<ul>
+  <li *ngFor="let service of services">
+    {{ service.name }} - ${{ service.price }}
+    <button (click)="book(service.name)">Book</button>
+  </li>
+</ul>
